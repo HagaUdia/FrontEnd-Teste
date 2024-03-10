@@ -1,0 +1,137 @@
+/* Reset básico para remover as margens padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {background-color: #000; overflow-y: scroll;}
+
+body {
+    background-color: #fff;
+    width: 100%;
+    display: block;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* cinza claro como cor de fundo */
+    text-align: center; margin: 0 auto; padding: 0;;
+}
+p { margin:30px 0; }
+
+header {
+    background-color: #540608; /* preto */
+    background-image: url(../assets/revolucao_twitter.jpg);
+    color: #fff; /* branco */
+    padding: 20px 0 0 0;
+    text-align: center;
+    background-attachment: scroll;
+    background-position: 50% 49%;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+p a { padding: 2px 4px; color: #E8050B; }
+* a:focus { outline-offset: -1px; border: 0; outline-color:#FC0; background-color: #FC0; color: #000; }
+main * a:focus { outline-offset: -2px; border: 0; outline-color:#540608 !important; }
+p a:hover {background-color: #E8050B; color: #FFF;}
+
+h1 { padding: 10px 0 30px 0; display: none;  }
+
+
+h2 { font-size: 3em; color:#E8050B; border-bottom: 1px solid gray; padding:10px 0 20px 0; background-color: transparent; }
+
+
+
+
+nav ul {
+    list-style-type: none; margin-top: 160px;
+    padding:15px 0; background-color: #000; border-top: 1px solid #666; border-bottom: 0;;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+nav ul li.selected a, nav ul li a:hover { background-color: #FC0; color: #000;}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* amarelo para links */
+    padding: 15px;
+}
+nav ul li a:hover {}
+
+main {
+    padding: 20px;
+    margin: 0 auto; display: table; clear: both; width: 100%;
+}
+footer a { color: #fff; }
+
+img.ilustra {float: left; padding: 0 20px 20px 0; max-width: 340px;}
+img.ilustra2 { max-width: 386px;}
+ul.galeria { display: table; float: none; clear: both;}
+ul.galeria li { float: left; list-style-type: none;}
+
+.banner {
+    background-color: grey; /* cinza */
+    color: #fff; /* branco */
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.destaques div {
+    background-color: #333; /* preto */
+    color: yellow; /* texto amarelo */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #000; /* preto */
+    background: linear-gradient(#262626 35%, #000);
+    color: #fff; /* branco */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+main { max-width: 1200px; text-align: left; margin: 0 auto;overflow: visible; }
+section.destaques {display: table; float: none; margin: 0; padding: 0;}
+img.logohome { max-width: 500px; float: left; padding: 0 20px 20px 0; margin: 0;}
+
+
+
+
+/* Responsividade */
+@media screen and (max-width:768px) {
+    nav ul li {
+        display: block;
+        margin:0;
+        margin-bottom: 10px;
+    }
+    nav ul li a { display: block;}
+    img.ilustra {max-width: fit-content; width: 100%;;}
+
+    .destaques {
+        display: block;
+    }
+   main section p img { width: 100%; clear: both; float: none; }
+   img.logohome { max-width: fit-content; margin: 0; padding: 0 0 20px 0; float: none;}
+
+   header {
+    background-position: 50% 65%;}
+ 
+
+}
+
+@media screen and (max-width: 480px) {
+    header, .banner, footer {
+        padding: 10px;
+    }
+}
+#ObjetoHeader {
+ display: block; 
+
+}

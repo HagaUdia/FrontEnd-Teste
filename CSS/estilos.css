@@ -22,7 +22,7 @@ header {
     background-image: url(../assets/revolucao_twitter.jpg);
     color: #fff; /* branco */
     padding: 20px 0 0 0;
-    text-align: center;
+    text-align: center; 
     background-attachment: scroll;
     background-position: 50% 49%;
     background-repeat: no-repeat;
